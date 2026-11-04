@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-11-02T23:01:33.559335",
+  "test_set_size": 291980,
+  "temporal_split_date": "1997-07-01",
+  "recurring_ground_truth_rate": 0.5804335913418728,
+  "rule_baseline": {
+    "precision": 0.9999692821232197,
+    "recall": 0.5762501843929784,
+    "f1_score": 0.7311576788027162,
+    "confusion_matrix": [
+      [
+        122502,
+        3
+      ],
+      [
+        71815,
+        97660
+      ]
+    ],
+    "throughput_tx_per_sec": 114157250.6594591
+  },
+  "ml_random_forest": {
+    "precision": 0.9978678415134792,
+    "recall": 0.9996695677828589,
+    "f1_score": 0.9987678920932865,
+    "roc_auc": 0.9999608024404312,
+    "pr_auc": 0.9999709974265142,
+    "confusion_matrix": [
+      [
+        122143,
+        362
+      ],
+      [
+        56,
+        169419
+      ]
+    ],
+    "throughput_tx_per_sec": 663970.7305292304
+  },
+  "serving_latency_ms": {
+    "mean": 41.459722300002795,
+    "p50": 39.91000000007716,
+    "p95": 61.6510550000953,
+    "p99": 85.23022900006707,
+    "sla_target_ms": 200.0,
+    "sla_met": true
+  },
+  "anomaly_detection": {
+    "threshold": 0.6261769377476322,
+    "flagged_count": 6059,
+    "anomaly_rate": 0.020751421330228097
+  }
+}
